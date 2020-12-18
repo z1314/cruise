@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    /* box-sizing: border-box; */
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 120px;
+    background-image: url('./images/bg-swiper.jpg');
+    background-size: 100% 100%;
+    overflow: hidden;
+    text-align: center;
+}
+header input{
+    width: 80%;
+    height: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    /* input是inline-block盒子，a是inline盒子,它们在垂直方向上的对齐方式不一样。可以把a设置为inline-blcok盒子然后更改它们的垂直对齐方式 */
+    vertical-align: top;
+    margin-top: 10px;
+}
+header a{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+header img{
+    background-color: #fff;
+    width: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/* nav */
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    float: left;
+    width: 20%;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li img{
+    width: 46px;
+}
+/* section */
+.container{
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.container>p{
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container>p span:first-child{
+    color: #666;
+}
+.container>p span:last-child{
+   color:#f63;
+}
+.container img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.container>div{
+    overflow: hidden;
+}
+.container>div p:nth-child(2){
+    padding: 10px 0;
+    font-size: 12px;
+}
+.dor{
+    font-size: 20px;
+    color: #f63;
+}
+.wor{
+    color: #666;
+}
+.container>a{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 5px 10px;
+    background-color: #f63;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
